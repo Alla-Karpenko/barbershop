@@ -13,7 +13,8 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <nav class="navigation">
+        <div class="container">
+           <nav class="navigation">
             <a class="logo" href="./index.html" aria-label="логотип барбершопа">
                 <img class="logo-img" src="./images/header/logo.svg" alt="логотип барбершопа" width="69" height="56">
             </a>
@@ -31,17 +32,20 @@
                 <a class="navigation-list-link link" href="">Контакты</a>
             </li>
           </ul>
-        </nav>
+         </nav>
 
-        <address class="address">
+          <address class="address">
             <a class="header-tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
-        </address>
-        <button class="modal-btn" type="button">онлайн-запись</button>
+          </address>
+           <button class="modal-btn" type="button">онлайн-запись</button>
+        </div>
+       
     </header>
     <main>
         <!-- HERO -->
         <section class="hero">
-            <div class="hero-left-side">
+            <div class="container">
+                 <div class="hero-left-side">
                 <ul class="social-links list">
                     <li class="social-links-item">
                         <a class="social-link link" href="">Instagram</a>
@@ -50,31 +54,34 @@
                         <a class="social-link link"href="">Youtube</a>
                     </li>
                 </ul>
-            </div>
-            <div class="hero-right-side">
+               </div>
+               <div class="hero-right-side">
                 <p class="subtitle subtitle-dark-theme" lang="en">A hair salon for men in Kyiv</p>
                 <h1 class="hero-title" lang="en">BarberShop</h1>
-                <p class="descrption descrption-dark-theme"> Мы эксперты в модных мужских стрижках.
+                <p class="description description-dark-theme"> Мы эксперты в модных мужских стрижках.
                     Работаем быстро, осторожно и со вкусом.</p>
+                </div>
             </div>
+           
         </section>
 
         <!-- ABOUT US -->
-        <section class="about">
-            <div class="about-left-side">
-                <ul class="about-list list"> 
+        <section class="about section">
+            <div class="container">
+                <div class="about-left-side">
+                  <ul class="about-list list"> 
                     <li class="about-list-item">
                         <img class="about-list-img" src="./images/about-us/about-img-1.jpg" alt="мастер намыливает бороду клиенту" width="240" height="475">
                     </li>
                     <li class="about-list-item">
                         <img class="about-list-img" src="./images/about-us/about-img-2.jpg" alt="мастер стрижет клиента" width="240" height="475">
                     </li>
-                </ul>
-            </div>
-            <div class="about-right-side">
+                  </ul>
+                </div>
+                <div class="about-right-side">
                 <p class="subtitle subtitle-light-theme">О нас</p>
                 <h2 class="title title-light-theme">Лучший Барбершоп твоего города</h2>
-                <p class="description descrption-light-theme ">
+                <p class="description description-light-theme ">
                     Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
                 </p>
                 <p class="about-text">
@@ -84,13 +91,16 @@
                 </p>
                 <button class="modal-btn" type="button"> онлайн-запись </button>
             </div>
+            </div>
         </section>
 
         <!-- SERVICES -->
-        <section class="services">
-            <p class="subtitle subtitle-dark-theme">Проведи время в компании лучших мастеров</p>
-            <h2 class="title">Услуги и цены</h2>
-            <ul class="services-list list">
+        <section class="services section">
+            <div class="container">
+                    <p class="subtitle subtitle-dark-theme">Проведи время в компании лучших мастеров</p>
+              <h2 class="title">Услуги и цены</h2>
+              <div class="services-list-wrapper">
+                    <ul class="services-list list">
                 <li class="services-list-item">
                     <span class="services-list-name">Мужская стрижка</span> <span class="services-list-price">от 300 грн.</span>
                 </li>
@@ -103,8 +113,8 @@
                 <li class="services-list-item">
                     <span class="services-list-name">Бритье опасной бритвой</span><span class="services-list-price">от 200 грн. </span>
                 </li>
-            </ul>
-            <ul class="services-list list">
+              </ul>
+              <ul class="services-list list">
                 <li class="services-list-item">
                     <span class="services-list-name">Cтрижка у стажера</span><span class="services-list-price">от 50 грн.</span>
                 </li>
@@ -117,8 +127,10 @@
                 <li class="services-list-item">
                     <span class="services-list-name">Камуфлирование седины</span><span class="services-list-price">от 200 грн.</span>
                 </li>
-            </ul>
-            <button class="modal-btn" type="button">онлайн-запись</button>
+                </ul>
+              </div>
+               <button class="modal-btn" type="button">онлайн-запись</button>
+            </div>
         </section>
 
         <!-- ACHIEVMENTS -->

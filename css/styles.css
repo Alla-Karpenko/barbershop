@@ -10,6 +10,13 @@
   --accent-color: #ff6c00;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--main-font);
   font-style: normal;
@@ -26,6 +33,19 @@ body {
 .address {
   font-style: normal;
 }
+img {
+  display: block;
+}
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
 
 /*  ============ COMPONENTS  ============ */
 .modal-btn {
@@ -37,6 +57,19 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
+  padding: 12px;
+  width: 160px;
+  height: 40px;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links-item:not(:last-child){
+    margin-right: 40px;
 }
 
 .social-link {
@@ -58,6 +91,7 @@ body {
   line-height: 1.364;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .subtitle-dark-theme {
@@ -101,6 +135,34 @@ body {
 /*  ============ END COMPONENTS  ============ */
 
 /*  ============ HEADER  ============ */
+.header {
+    padding: 32px 0;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .address{
+    margin-left: auto;
+    margin-right: 40px;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.logo {
+    margin-right: 70px;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 40px;
+}
 
 .navigation-list-link,
 .header-tel-link {
@@ -120,17 +182,61 @@ body {
 /*  ============ END HEADER  ============ */
 
 /*  ============ HERO  ============ */
+.hero .description {
+    max-width: 400px;
+}
+
+.hero .container {
+    display: flex;
+}
+
+.hero-left-side {
+    width: 100px;
+}
+
+.hero-right-side {
+  flex-grow: 1;
+  padding-right: 100px;  
+  padding-top: 272px;
+  padding-bottom: 206px;
+}
+
 .hero-title {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 72px;
   line-height: 1.181;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 }
 
 /*  ============ END HERO  ============ */
 
 /* ============ ABOUT  ============*/
+.about .container {
+    display: flex;
+}
+
+.about .title {
+    margin-bottom: 20px;
+}
+
+.about .description {
+    margin-bottom: 20px;
+}
+
+.about-list {
+    display: flex;
+}
+
+.about-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.about-right-side {
+    padding-left: 64px;
+    padding-right: 116px;
+}
 
 .about-text {
   font-weight: 400;
@@ -138,11 +244,40 @@ body {
   line-height: 1.857;
   letter-spacing: 0.02em;
   color: var(--description-light-theme-color);
+  margin-bottom: 40px;
 }
 
 /* ============ END ABOUT  ============*/
 
 /* ============ SERVICES  ============*/
+.services .title {
+    margin-bottom: 44px;
+}
+
+.services .modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.services-list-wrapper {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.services-list {
+    width: 50%;
+    padding: 30px 40px;
+}
+
+.services-list-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .services-list-name,
 .services-list-price {
   font-weight: 400;
